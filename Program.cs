@@ -30,15 +30,15 @@ namespace EX_6A_C_Manipulating_Arrays
             Console.WriteLine("\n");                                            // Inserts blank line between results
 
             Console.Write("Array_A rotated Left 2 is :");
-            RotatingArray("Left", 2, Array_A);
+            RotatingArray("Left", 2, Array_A);                                  // Calls array rotate method with Array_A parameters above
             Console.Write("Array_B rotated Right 2 is :");
-            RotatingArray("Right", 2, Array_B);
+            RotatingArray("Right", 2, Array_B);                                 // Calls array rotate method with Array_B parameters above
             Console.Write("Array_C rotated Left 4 is :");
-            RotatingArray("Left", 4, Array_C);
+            RotatingArray("Left", 4, Array_C);                                  // Calls array rotate method with Array_C parameters above
             Console.WriteLine("\n");
 
-            Console.Write("Array_C sorted is: ");
-            sortedArray(Array_C);
+            Console.Write("Array_C sorted is: ");                               
+            sortedArray(Array_C);                                               // Calls the array sort method using Array_C parameters abobe
             Console.WriteLine("\n");
         }
 
@@ -108,7 +108,7 @@ namespace EX_6A_C_Manipulating_Arrays
                 
                 for (int i = 0; i < Array.Length; i++)
                 {
-                    Results+=(Array[i] + " ");
+                    Results+=(Array[i] + ",");
                 }
                 Console.WriteLine(Results);
 
